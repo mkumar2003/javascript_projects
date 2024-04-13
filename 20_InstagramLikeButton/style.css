@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Gilroy';
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+body{
+    background-color: cornflowerblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+#container
+{
+    height: 400px;
+    width: 350px;
+    background-color: red;
+    border-radius: 10px; 
+    position: relative;  
+}
+
+#container img{
+    height: 100%;
+    width: 100%;
+    object-fit:cover;
+    object-position:center;
+}
+
+#container i{
+    color:#fff;
+    font-size: 75px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(1);
+    /* transform property can be used only once so we need to enter all its attributes at once only,.  ,,,scale is used to inc. size of increases.. */
+    opacity: 0;
+    transition: all ease 0.4s;
+}
+
